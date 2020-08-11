@@ -2,7 +2,8 @@ h1
 {
 	 padding-top: 5%;
 	 text-align: center;
-	  font-size: 15px;
+	  font-size: 30px;
+	  color: white;
 }
 
 nav
@@ -18,4 +19,102 @@ nav
 	padding-top:1%;	
 	margin-left: auto;
     margin-right: auto;
+}
+.pic 
+{
+	padding-top:5%;
+	
+}
+.language_eng
+{
+   margin-top:2%;
+}
+.language_rus
+{
+   margin-top:2%;
+}
+.language_est
+{
+   margin-top:2%;
+}
+.en_flag
+{
+	border: 1px solid #555;
+	border-color: #FFFFFF;
+}
+.ee_flag
+{
+	border: 1px solid #555;
+	border-color: #FFFFFF;
+}
+.ru_flag
+{
+	border: 1px solid #555;
+	border-color: #FFFFFF;
+}
+
+
+/* Style the navigation menu */
+.navbar {
+  width: 100%;
+  }
+ 
+
+/* Navigation links */
+.navbar a {
+  float: left;
+  padding: 12px;
+  color: white;
+  border: 1px solid #555;
+  border-color: #FFFFFF;
+  text-decoration: none;
+  font-size: 17px;
+  width: 25%; /* Four equal-width links. If you have two links, use 50%, and 33.33% for three links, etc.. */
+  text-align: center; /* If you want the text to be centered */
+  border-radius: 12px;
+}
+
+/* Add a background color on mouse-over */
+.navbar a:hover {
+  background-color: #000;
+}
+
+/* Style the current/active link */
+.navbar a.active {
+  background-color: #4CAF50;
+}
+
+/* Add responsiveness - on screens less than 500px, make the navigation links appear on top of each other, instead of next to each other */
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: left; /* If you want the text to be left-aligned on small screens */
+  }
+}
+
+body 
+{
+	padding-right:2%;
+	padding-left:2%;
+	padding-bottom:2%;
+	
+   background: url(pictures/background2.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.rectangle
+{
+	background-color: #000;
+	height: 15px;
+	width: 100%;
+}
+
+.mypic
+{
+	 border: 3px solid #FFFFFF;
 }

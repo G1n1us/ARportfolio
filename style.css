@@ -1,3 +1,19 @@
+@font-face {
+// название шрифта(чтобы не запутаться лучше указать название папки со шрифтом) 
+font-family: "Roboto-Bold"; 
+// адрес шрифта и тип 
+src: url("../fonts/Roboto-Bold.ttf") format("truetype"); 
+font-style: normal; 
+font-weight: normal; 
+} 
+@font-face {
+// название шрифта(чтобы не запутаться лучше указать название папки со шрифтом) 
+font-family: "Roboto-Medium"; 
+// адрес шрифта и тип 
+src: url("../fonts/Roboto-Medium.ttf") format("truetype"); 
+font-style: normal; 
+font-weight: normal; 
+} 
 h1 
 {
 	 padding-top: 5%;
@@ -6,8 +22,14 @@ h1
 	  color: white;
 	  padding-bottom:3%;
 	  text-shadow: 2px 2px 5px green;
+	  font-family: "Roboto-Bold";
 }
-
+p
+{
+	font-family: "Roboto-Medium";
+	 text-align: center;
+	 font-size: 15px;
+}
 nav
 {
 	 padding-top:10%;
@@ -123,9 +145,18 @@ body
 
 .text_me 
 {
+	 width: 90%; /* задаете свои размеры */
+    height: 90%;
+    border-radius: 20%;
+    /* не забываем о кроссбраузерности */
+    -moz-border-radius: 20%;
+    -webkit-border-radius: 20%;
+    -khtml-border-radius: 20%;
 	margin-top:20px;
 	 background-color: #FFFFFF;
-	 border-radius: 5%;
+	 -webkit-box-shadow: 9px 9px 19px 6px rgba(215,212,255,0.27);
+-moz-box-shadow: 9px 9px 19px 6px rgba(215,212,255,0.27);
+box-shadow: 9px 9px 19px 6px rgba(215,212,255,0.27);
 }
 h2
 {
@@ -138,9 +169,4 @@ h3
 {
 	 text-align: center;
 	 font-size: 18px;
-}
-p
-{
-	 text-align: center;
-	 font-size: 15px;
 }

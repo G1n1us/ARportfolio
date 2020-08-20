@@ -1,5 +1,4 @@
 @font-face {
-// название шрифта(чтобы не запутаться лучше указать название папки со шрифтом) 
 font-family: "Roboto-Bold"; 
 // адрес шрифта и тип 
 src: url("../fonts/Roboto-Bold.ttf") format("truetype"); 
@@ -7,13 +6,23 @@ font-style: normal;
 font-weight: normal; 
 } 
 @font-face {
-// название шрифта(чтобы не запутаться лучше указать название папки со шрифтом) 
 font-family: "Roboto-Medium"; 
 // адрес шрифта и тип 
 src: url("../fonts/Roboto-Medium.ttf") format("truetype"); 
 font-style: normal; 
 font-weight: normal; 
-} 
+}
+@font-face {
+font-family: "Roboto-Thin"; 
+// адрес шрифта и тип 
+src: url("../fonts/Roboto-Thin.ttf") format("truetype"); 
+font-style: normal; 
+font-weight: normal; 
+}  
+h5
+{
+	font-family: "Roboto-Thin";
+}
 h1 
 {
 	 padding-top: 5%;
@@ -180,5 +189,27 @@ background-color:rgba(0,0,0,0.8);
 {
 background-color:rgba(0,0,0,0.8);
 }
+.header
+{
+background-color:rgba(0,0,0,0.3);
+ border-radius: 20%;
+}
 
+.works
+{
+	margin-top:5%;
+}
 
+.works_show
+{
+	padding-top:1%;	
+	margin-left: auto;
+    margin-right: auto;
+}
+
+.card
+{
+	margin-top:5%;
+	margin-left:40px;
+	margin-right:40px;
+}

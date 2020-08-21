@@ -7,6 +7,9 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<link href="/path/to/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/path/to/css/font-awesome.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="bootstrap-social.css" />
 	<link rel="stylesheet" type="text/css" href="style.css">
     <title>Portfolio Aleksei Rusin</title>
 	
@@ -15,20 +18,22 @@
   <div class="rectangle"></div>
   <div class="header row col-12">
   <div class="pic col-3">
-  <img src="pictures/me.png" alt="Aleksei Rusin" class="img-responsive" width="80%" >
+  <img src="pictures/me_portfolio_pic.png" alt="Aleksei Rusin" class="img-responsive" width="100%" >
   </div>
   <div class="navbar col-6">
+  
 
 <div class="button navbar">
-  <a class="About_me" href="#">Обо мне</a>
-  <a class="My_work" href="#">Мои работы</a>
-  <a class="Contact" href="#">Контакты</a>
+  <a class="About_me" href="#about_me">Обо мне</a>
+  <a class="My_work" href="#works">Мои работы</a>
+  <a class="Contact" href="#contact">Контакты</a>
 </div>
 
 </div>
+
  <div class="language_est row col-1">
 	<a href="#"><img class="ee_flag" src="pictures/ee_flag.jpg" alt="Флаг Эстонии" width="50%"></a>
-  </div>
+	</div>
    <div class="language_eng row col-1">
 	<a href="#"><img  class="en_flag" src="pictures/en_flag.jpg" alt="Флаг Британии" width="50%"></a>
   </div>
@@ -36,7 +41,7 @@
 	<a href="#"><img  class="en_flag" src="pictures/ru_flag.jpg" alt="Флаг Британии" width="50%"></a>
   </div>
 </div>
-<div class="row col-12">
+<div id="about_me" class="row col-12">
 	<div class="col-5">
 	</div>
 		<div class="header col-2">
@@ -45,8 +50,6 @@
 				<div class="col-5">
 				</div>
 </div>
-
-
 <div class="row col-12">
 <div class="col-2"></div>
 <div class="text_me col-8">
@@ -55,9 +58,43 @@
 </div>
 <div class="col-2"></div>
 </div>
+<div class="row col-12">
+<div class="col-2"></div>
+<div class="text_me col-8">
+<h2>Обучение</h2>
+<p><a href="https://et.wikipedia.org/wiki/Keila_P%C3%B5hikool">Keila Ühisgümnaasium</a> с 2000 по 2009 год.</p>
+<p><a href="https://www.tptlive.ee/">Tallinna Polütehnikum</a> с 2009 по 2012 год.</p>
+<p><a href="https://www.tptlive.ee/">Ettevõtluskõrgkool Mainor</a> с 2017 по 2021 (идет учеба) год.</p>
+</div>
+<div class="col-2"></div>
+</div>
+<div class="row col-12">
+<div class="col-2"></div>
+<div class="text_me col-8">
+<h2>Мои навыки в сфере ИТ</h2>
+<p>Таблица навыков:</p>
+<table></table>
+</div>
+<div class="col-2"></div>
+</div>
 
+<div class="like row col-12">
+<div class="col-2"></div>
+<div class="text_me col-8">
+<h2>Что меня привлекает в ИТ больше всего</h2>
+<hr>
+<ul>
+<li>Создание видимых объектов</li>
+<li>Сложные задачи (построение пути для решения сложного задания)</li>
+<li>........</li>
+</ul>
+</hr>
+<table></table>
+</div>
+<div class="col-2"></div>
+</div>
   
-<div class="works row col-12">
+<div id="works" class="works row col-12">
 	<div class="col-5">
 	</div>
 		<div class="header col-2">
@@ -73,12 +110,22 @@
 <div class="col-1"></div>
 
 <div class="card works1" style="width: 18rem;">
-  <img class="card-img-top" src="pictures/ee_flag.png" alt="Est FLAG">
+  <img class="card-img-top" src="pictures/sota.jpg" alt="SOTA">
   <div class="card-body">
-    <h5 class="card-title">Веб страница SOTA</h5>
+    <h5 class="card-title"><b>Веб страница SOTA</b></h5>
     <p class="card-text">Данная страница разрабатывалась для учебной работы, в ходе которой 
-	была поставлена цель сделать веб страницу для различных платформ. Таких как: планшет, телефон и копьютер</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+	была поставлена цель сделать веб страницу для различных платформ. Таких как: планшет, телефон и компьютер.</p>
+	<hr>
+	<div class="icons">
+	<a href="https://getbootstrap.com/"><img class="icon" src="pictures/bootstrap.png"  title="Bootstrap" alt="Bootstrap icon" width="15%"></a>
+	<a href="https://et.wikipedia.org/wiki/HTML"><img class="icon" src="pictures/html.png"  title="HTML" alt="HTML icon" width="15%"></a>
+	<a href="https://www.javascript.com/"><img class="icon" src="pictures/js.png"  title="JavaScript" alt="JavaScript icon" width="15%"></a>
+	<a href="https://www.javascript.com/"><img class="icon" src="pictures/ux_and_ui.png"  title="JavaScript" alt="JavaScript icon" width="15%"></a>
+	</div>
+	</hr>
+	<hr>
+    <a href="public_html/index.html" class="btn btn-primary">Посмотреть</a>
+	</hr>
   </div>
 </div>
 
@@ -105,7 +152,7 @@
 </div>
 
 
-<div class="works row col-12">
+<div id="contact" class="works row col-12">
 	<div class="col-5">
 	</div>
 		<div class="header col-2">
@@ -114,10 +161,59 @@
 				<div class="col-5">
 				</div>
 </div>
+<div class="row col-12">
+<div class="col-4"></div>
+<div class="contact col-4">
+<a href="mailto:Aleksei.Rusin@tptlive.ee"><h2 class="e-mail">Aleksei.Rusin[ALT]tptlive.ee</h2></a>
+<a class="social" href="https://www.facebook.com/g1n1us" class="btn btn-social-icon btn-facebook">
+    <span class="fa fa-facebook"></span>
+</a>
+<a class="social" href="https://vk.com/g1n1us" class="btn btn-social-icon btn-vk">
+    <span class="fa fa-vk"></span>
+</a>
+
+<a class="social" href=https://ee.linkedin.com/public-profile/in/aleksei-rusin-b2b46818b?challengeId=AQHc4IKl5NSJ4gAAAXQQToOcx-UBN5rMEwcALEvHPDuc4Ums0y6-49vu2vXrrKYQS7_TzFquWMzUnn9vajM74uYPrbbbBCmlbw&submissionId=b1987601-d23d-2d16-e53f-80a082d4d228" class="btn btn-social-icon btn-linkedin">
+    <span class="fa fa-linkedin"></span>
+</a>
+
+<a class="social" href="https://github.com/G1n1us" class="btn btn-social-icon btn-github">
+    <span class="fa fa-github"></span>
+</a>
 
 
+<h2 class="copyright">&#169 Aleksei Rusin</h2>
+</div>
+<div class="col-4"></div>
+</div>
+<button onclick="topFunction()" id="myBtn" title="Page UP">
+<img src="pictures/strelka.png" alt="Icon UP" class="rounded-circle " width="30" height="30"></button> 
+  <script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+
+$('#myModal').on('shown.bs.modal', function () {
+  $('#myInput').trigger('focus')
+})
+
+</script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+	<script src="https://kit.fontawesome.com/68ef3909cb.js" crossorigin="anonymous"></script>  
+	
   </body>
 </html>

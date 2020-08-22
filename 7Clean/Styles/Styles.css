@@ -1,0 +1,53 @@
+@media (min-width: 768px) {
+  .sidebar-nav .navbar .navbar-collapse {
+    padding: 0;
+    max-height: none;
+  }
+  .sidebar-nav .navbar ul {
+    float: none;
+    display: block;
+  }
+  .sidebar-nav .navbar li {
+    float: none;
+    display: block;
+  }
+  .sidebar-nav .navbar li a {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+}
+
+footer{
+    border:5px solid grey;
+    margin-left:5px;
+    margin-right:5px;
+    padding:10px;
+    background-color:#000000;
+    }
+    
+footer {
+    color:white;background-color:#444;text-align:center;
+    }
+    
+.window1{
+ height: 300px;
+ width:100%;
+ background:#BABAC0;
+ color: #fff; 
+ border-radius: 5px; }
+ 
+ body{
+ padding:10px;
+ }
+ 
+
+ background: url(../Pictures/back.jpg) no-repeat;
+    -moz-background-size: 100%;
+    -webkit-background-size: 100%; 
+    -o-background-size: 100%; 
+    background-size: 100%;
+    
+    h2{
+    background:#CACACA;
+    } 
+    

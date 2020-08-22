@@ -203,8 +203,7 @@ background-color:rgba(0,0,0,0.3);
 .card
 {
 	margin-top:5%;
-	margin-left:40px;
-	margin-right:40px;
+	margin-right:20px;
 }
 
 .contact
@@ -269,4 +268,10 @@ background-color:rgba(0,0,0,0.3);
 #myBtn:hover 
 {
   background-color: #555;
+}
+
+.center
+{
+	width: 120%;
+  margin: 0 auto;
 }

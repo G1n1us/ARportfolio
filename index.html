@@ -11,25 +11,25 @@
 	<link href="/path/to/css/font-awesome.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="bootstrap-social.css" />
 	<link rel="stylesheet" type="text/css" href="style.css">
+	
     <title>Portfolio Aleksei Rusin</title>
 	
   </head>
   <body>
+    
+  <div class="container-lg-12 d-lg-block d-none d-md-none container-fluid">
   <div class="rectangle"></div>
   <div class="header row col-12">
   <div class="pic col-3">
   <img src="pictures/me_portfolio_pic.png" alt="Aleksei Rusin" class="img-responsive" width="100%" >
   </div>
-  <div class="navbar col-6">
-<div class="button navbar">
+<div class="navbar col-7">
   <a class="About_me" href="#about_me">Обо мне</a>
   <a class="My_work" href="#works">Мои работы</a>
   <a class="Contact" href="#contact">Контакты</a>
-</div>
-</div>
-<div class="col-1"><a href="#ee"><img class="ee_flag" src="pictures/ee_flag.jpg" alt="Флаг Эстонии" width="50%"></a></div>
-<div class="col-1"><a href="#en"><img  class="en_flag" src="pictures/en_flag.jpg" alt="Флаг Британии" width="50%"></a></div>
-<div class="col-1"><a href="#ru"><img  class="ru_flag" src="pictures/ru_flag.jpg" alt="Флаг Британии" width="50%"></a></div>
+  </div>
+<div class="col-1"><a href="ee.html"><img class="ee_flag" src="pictures/ee_flag.jpg" alt="Флаг Эстонии" width="50%"></a></div>
+<div class="col-1"><a href="en.html"><img  class="en_flag" src="pictures/en_flag.jpg" alt="Флаг Британии" width="50%"></a></div>
 
 </div>
 <div id="about_me" class="row col-12">
@@ -86,21 +86,19 @@
 </div>
   
 <div id="works" class="works row col-12">
-	<div class="col-5">
+	<div class="col-4">
 	</div>
-		<div class="header col-2">
+		<div class="header col-4">
 				<h1>Мои работы</h1>
 		</div>
-				<div class="col-5">
+				<div class="col-4">
 				</div>
 </div>
 
 
-
 <div class="works_show row col-12">
 <div class="col-1"></div>
-
-<div class="card works1" style="width: 18rem;">
+<div class="card works1 col-3" style="width: 18rem;">
   <img class="card-img-top" src="pictures/sota.jpg" alt="SOTA">
   <div class="card-body">
     <h5 class="card-title"><b>Веб страница SOTA</b></h5>
@@ -111,7 +109,7 @@
 	<a href="https://getbootstrap.com/"><img class="icon" src="pictures/bootstrap.png"  title="Bootstrap" alt="Bootstrap icon" width="15%"></a>
 	<a href="https://et.wikipedia.org/wiki/HTML"><img class="icon" src="pictures/html.png"  title="HTML" alt="HTML icon" width="15%"></a>
 	<a href="https://www.javascript.com/"><img class="icon" src="pictures/js.png"  title="JavaScript" alt="JavaScript icon" width="15%"></a>
-	<a href="https://www.javascript.com/"><img class="icon" src="pictures/ux_and_ui.png"  title="JavaScript" alt="JavaScript icon" width="15%"></a>
+	<a href="https://en.wikipedia.org/wiki/User_experience_design"><img class="icon" src="pictures/ux_and_ui.png"  title="JavaScript" alt="JavaScript icon" width="15%"></a>
 	</div>
 	</hr>
 	<hr>
@@ -119,18 +117,22 @@
 	</hr>
   </div>
 </div>
-
-<div class="card works2" style="width: 18rem;">
-  <img class="card-img-top" src="pictures/en_flag.jpg" alt="English FLAG">
+<div class="card works2 col-3" style="width: 18rem;">
+  <img class="card-img-top" src="pictures/7clean.jpg" alt="7clean">
   <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+    <h5 class="card-title">Веб страница 7Clean</h5>
+    <p class="card-text">Данная работа делалась для потверждения знания использования Bootstrap в ходе учебной программы в Mainor.</p>
+	<hr>
+	<div class="icons">
+	<a href="https://getbootstrap.com/"><img class="icon" src="pictures/bootstrap.png"  title="Bootstrap" alt="Bootstrap icon" width="15%"></a>
+	<a href="https://et.wikipedia.org/wiki/HTML"><img class="icon" src="pictures/html.png"  title="HTML" alt="HTML icon" width="15%"></a>
+	</div>
+	</hr>
+	<hr>
+    <a href="7Clean/services.html" class="btn btn-primary">Посмотреть</a>
   </div>
 </div>
-
-
-<div class="card works3" style="width: 18rem;">
+<div class="card works3 col-3" style="width: 18rem;">
   <img class="card-img-top" src="pictures/ru_flag.jpg" alt="Rus FLAG">
   <div class="card-body">
     <h5 class="card-title">Card title</h5>
@@ -138,10 +140,137 @@
     <a href="#" class="btn btn-primary">Go somewhere</a>
   </div>
 </div>
-
 <div class="col-1"></div>
 </div>
 
+
+<!-- NEW				NEW				NEW						NEW						NEW					NEW-->
+<div class="center row col-12">
+<div class="col-1"></div>
+<div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
+
+  <!--Controls-->
+  <div class="controls-top">
+    <a class="btn-floating" href="#multi-item-example" data-slide="prev"><i class="fas fa-chevron-left"></i></a>
+    <a class="btn-floating" href="#multi-item-example" data-slide="next"><i class="fas fa-chevron-right"></i></a>
+  </div>
+  <!--/.Controls-->
+
+  <!--Indicators-->
+  <ol class="carousel-indicators">
+    <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
+    <li data-target="#multi-item-example" data-slide-to="1"></li>
+    
+  </ol>
+  <!--/.Indicators-->
+
+  <!--Slides-->
+  <div class="carousel-inner" role="listbox">
+
+    <!--First slide-->
+    <div class="carousel-item active">
+
+      <div class="col-md-3" style="float:left">
+       <div class="card mb-2">
+          <img class="card-img-top"
+            src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg" alt="Card image cap">
+          <div class="card-body">
+            <h4 class="card-title">Card title</h4>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+              card's content.</p>
+            <a class="btn btn-primary">Button</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3" style="float:left">
+        <div class="card mb-2">
+          <img class="card-img-top"
+            src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg" alt="Card image cap">
+          <div class="card-body">
+            <h4 class="card-title">Card title</h4>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+              card's content.</p>
+            <a class="btn btn-primary">Button</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3" style="float:left">
+        <div class="card mb-2">
+          <img class="card-img-top"
+            src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg" alt="Card image cap">
+          <div class="card-body">
+            <h4 class="card-title">Card title</h4>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+              card's content.</p>
+            <a class="btn btn-primary">Button</a>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    <!--/.First slide-->
+
+    <!--Second slide-->
+    <div class="carousel-item">
+
+      <div class="col-md-3" style="float:left">
+        <div class="card mb-2">
+          <img class="card-img-top"
+            src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg" alt="Card image cap">
+          <div class="card-body">
+            <h4 class="card-title">Card title</h4>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+              card's content.</p>
+            <a class="btn btn-primary">Button</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3" style="float:left">
+        <div class="card mb-2">
+          <img class="card-img-top"
+            src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(47).jpg" alt="Card image cap">
+          <div class="card-body">
+            <h4 class="card-title">Card title</h4>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+              card's content.</p>
+            <a class="btn btn-primary">Button</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3" style="float:left">
+        <div class="card mb-2">
+          <img class="card-img-top"
+            src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(48).jpg" alt="Card image cap">
+          <div class="card-body">
+            <h4 class="card-title">Card title</h4>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+              card's content.</p>
+            <a class="btn btn-primary">Button</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--/.Second slide-->
+
+   
+
+  </div>
+  <!--/.Slides-->
+
+</div>
+<!--/.Carousel Wrapper-->
+</div>
+
+<!---    NEW END 			NEW END						NEW END					NEW END				NEW END			NEW END -->
+
+<!------------------------------------        Galery  Galery        Galery                    Galery        --------------------------------------->
+
+
+<!-- Galery end 	Galery end			Galery end			Galery end			Galery end				Galery end				Galery end -->
 
 <div id="contact" class="works row col-12">
 	<div class="col-5">
@@ -200,11 +329,17 @@ $('#myModal').on('shown.bs.modal', function () {
   $('#myInput').trigger('focus')
 })
 
+// MDB Lightbox Init
+$(function () {
+$("#mdb-lightbox-ui").load("mdb-addons/mdb-lightbox-ui.html");
+});
 </script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-	<script src="https://kit.fontawesome.com/68ef3909cb.js" crossorigin="anonymous"></script>  
+	<script src="https://kit.fontawesome.com/68ef3909cb.js" crossorigin="anonymous"></script> 
 	
+	
+</div>	
   </body>
 </html>

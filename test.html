@@ -1,7 +1,7 @@
 
 <!DOCTYPE html>
 <html>
-
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 body {
   font-family: Verdana, sans-serif;
@@ -148,9 +148,17 @@ img.hover-shadow {
 
 <div class="row">
   <div class="column">
-    <img src="pictures/graf/tip.png" style="width:100%" onclick="openModal()" class="hover-shadow cursor">
+    <img src="pictures/graf/star.png" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
   </div>
-
+  <div class="column">
+    <img src="pictures/graf/sport.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="pictures/graf/retro_photo.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+  </div>
+  <div class="column">
+    <img src="pictures/graf/tip.png" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  </div>
 </div>
 
 <div id="myModal" class="modal">
@@ -158,13 +166,24 @@ img.hover-shadow {
   <div class="modal-content">
 
     <div class="mySlides">
+      <img src="pictures/graf/star.png" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <img src="pictures/graf/sport.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <img src="pictures/graf/retro_photo.jpg" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
       <img src="pictures/graf/tip.png" style="width:100%">
     </div>
-	
-    <div class="caption-container">
-      <p id="caption"></p>
-    </div>
-	
+    
+
+
+
   </div>
 </div>
 

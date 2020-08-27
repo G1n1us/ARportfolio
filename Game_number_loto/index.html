@@ -36,5 +36,54 @@
 </div>
 <div>
 </div>
+
+<div id="code";class="code" style="display:none">
+<code>
+
+var num;<br />
+num=Math.floor(Math.random() * 100)+1;<br />
+
+function get_number()<br />
+{<br />
+	Number(document.getElementById("number").innerHTML = num).value;<br />
+	var zam=Number(document.getElementById("an").value);<br />
+	document.getElementById("ad").innerHTML += zam+","+' ';<br />
+	if(zam==num)<br />
+	{<br />
+		document.getElementById("good").innerHTML = 'Поздравляем это верный ответ!';<br />
+		
+	}<br />
+	else<br />
+	{<br />
+		document.getElementById("good").innerHTML = 'Не правильное число!';<br />
+		 document.getElementById("good").bgColor="red";<br />
+	}<br />
+	if (zam!==num)<br />
+	{<br />
+	if(zam<num)<br />
+	{
+		document.getElementById("men").innerHTML = 'Число должно быть больше введенного';<br />
+	}else<br />
+	{<br />
+		document.getElementById("men").innerHTML = 'Число должно быть меньше введенного';<br />
+	}<br />
+	} else<br />
+	{<br />
+		document.getElementById("men").innerHTML = '';<br />
+		setTimeout("location.href = 'index.html';", 400);<br />
+	}<br />
+	
+}<br />
+
+</code>
+</div>
+
+
+<button title="Click to show/hide content" class="btn btn-light" type="button" 
+onclick="if(document.getElementById('code') .style.display=='none')
+ {document.getElementById('code') .style.display=''}
+ else{document.getElementById('code') .style.display='none'}">
+ <b>Show code</b>
+ </button>
 </body>
 </html>

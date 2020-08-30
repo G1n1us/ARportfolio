@@ -237,6 +237,9 @@ background-color:rgba(0,0,0,0.3);
 	margin-left:2%;
 	margin-right:2%;
 }
+.icon:hover{
+box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 255.2), 0 6px 20px 0 rgba(0, 0, 0, 0.50);
+}
 #myBtn {
 
   display: none;
@@ -280,4 +283,21 @@ background-color:rgba(0,0,0,0.3);
 .More
 {
 	margin-top:50px;
+}
+.cv_ru
+{
+	margin-left:70px;
+	margin-top:15px;
+}
+
+.cv_ee
+{
+	margin-left:110px;
+	margin-top:15px;
+}
+
+.cv_en
+{
+	margin-left:110px;
+	margin-top:15px;
 }

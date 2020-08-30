@@ -5,20 +5,21 @@
     <meta name="dcterms.created" content="N, 03 jaan 2019 16:25:10 GMT">
     <meta name="description" content="">
     <meta name="keywords" content="">
-<title>Угадай число</title>
+<title>Mini-Game Loto</title>
+
 
 </head>
 
 <body>
 <div>
-<h1>Игра угадай число</h1>
-<h3>Угадай число в диопозоне от 1 до 100</h3>
+<h1>Mini-Game Loto</h1>
+<h3>Guess the number in the range from 1 to 100</h3>
 <br>
 <p hidden id="number"></p>
-<h4>Введи число:</h4>
+<h4>Enter the number:</h4>
 <input type="number" id="an" min="1" max="100" required></input>
 
-<button onclick="get_number()">Проверить</button>
+<button onclick="get_number()">Check</button>
 </div>
 <p id="ad"></p>
 <div>
@@ -49,22 +50,22 @@ function get_number()<br />
 	document.getElementById("ad").innerHTML += zam+","+' ';<br />
 	if(zam==num)<br />
 	{<br />
-		document.getElementById("good").innerHTML = 'Поздравляем это верный ответ!';<br />
+		document.getElementById("good").innerHTML = 'Congratulations on this correct answer!';<br />
 		
 	}<br />
 	else<br />
 	{<br />
-		document.getElementById("good").innerHTML = 'Не правильное число!';<br />
+		document.getElementById("good").innerHTML = 'Incorrect number!';<br />
 		 document.getElementById("good").bgColor="red";<br />
 	}<br />
 	if (zam!==num)<br />
 	{<br />
 	if(zam<num)<br />
 	{
-		document.getElementById("men").innerHTML = 'Число должно быть больше введенного';<br />
+		document.getElementById("men").innerHTML = 'The number must be greater than the entered ↑';<br />
 	}else<br />
 	{<br />
-		document.getElementById("men").innerHTML = 'Число должно быть меньше введенного';<br />
+		document.getElementById("men").innerHTML = 'The number must be less than the entered↓';<br />
 	}<br />
 	} else<br />
 	{<br />
@@ -87,7 +88,6 @@ onclick="if(document.getElementById('code') .style.display=='none')
  
 </body>
 <script>
-
 var num;
 num=Math.floor(Math.random() * 100)+1;
 
@@ -98,22 +98,22 @@ function get_number()
 	document.getElementById("ad").innerHTML += zam+","+' ';
 	if(zam==num)
 	{
-		document.getElementById("good").innerHTML = 'Поздравляем это верный ответ!';
-		
+		document.getElementById("good").innerHTML = 'Congratulations on this correct answer!';
+		document.getElementById("good").style.color="green";
 	}
 	else
 	{
-		document.getElementById("good").innerHTML = 'Не правильное число!';
-		 document.getElementById("good").bgColor="red";
+		document.getElementById("good").innerHTML = 'Incorrect number!';
+		document.getElementById("good").style.color="red";
 	}
 	if (zam!==num)
 	{
 	if(zam<num)
 	{
-		document.getElementById("men").innerHTML = 'Число должно быть больше введенного';
+		document.getElementById("men").innerHTML = 'The number must be greater than the entered ▲';
 	}else
 	{
-		document.getElementById("men").innerHTML = 'Число должно быть меньше введенного';
+		document.getElementById("men").innerHTML = 'The number must be less than the entered ▼';
 	}
 	} else
 	{
@@ -122,6 +122,8 @@ function get_number()
 	}
 	
 }
+
+
 
 </script>
 </html>

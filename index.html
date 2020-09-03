@@ -15,6 +15,25 @@
 	<title>Portfolio Aleksei Rusin</title>
   </head>
   <body>
+  
+  <!-- 				Версия телефона  				 				Версия телефона  				 				Версия телефона  				-->
+
+<div class="container-sm-12 d-sm-block d-md-none">
+<div class="row ">
+<div class="centerpic col-12">
+  <img src="pictures/me_portfolio_pic.png" alt="Aleksei Rusin" class="img-responsive" width="100%" >
+  </div>
+  </div>
+  <div class="centerdiv col-12">
+    <a href="CV/CV_ENG.pdf" target="_blank">
+  <button class="centerdiv btn btn-light" type="button">Show CV</button></a>
+  </div>
+</div>
+
+<!-- 		Конец		Версия телефона  		Конец	 				Версия телефона  		Конец	 				Версия телефона  				-->
+
+  
+  
   <div class="container-lg-12 d-lg-block d-none d-md-none container-fluid">
   <div class="rectangle"></div>
   <div class="header row col-12">
@@ -550,10 +569,6 @@ onclick="if(document.getElementById('spoiler') .style.display=='none')
   </div>
 </div>
 
-
-
-
-
   <script>
   
 // When the user scrolls down 20px from the top of the document, show the button
@@ -614,6 +629,23 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
+
+$(document).ready(function () {
+
+  $('.first-button').on('click', function () {
+
+    $('.animated-icon1').toggleClass('open');
+  });
+  $('.second-button').on('click', function () {
+
+    $('.animated-icon2').toggleClass('open');
+  });
+  $('.third-button').on('click', function () {
+
+    $('.animated-icon3').toggleClass('open');
+  });
+});
+
 </script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>

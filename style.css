@@ -301,3 +301,21 @@ box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 255.2), 0 6px 20px 0 rgba(0, 0, 0, 0
 	margin-left:110px;
 	margin-top:15px;
 }
+
+.centerdiv {
+  margin:0;
+  position: absolute;
+  margin-top:40px;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, 0%);
+}
+
+  
+  .centerpic {
+  left: 50%;
+  -ms-transform: translate(-50%, +50%);
+  transform: translate(-50%, 20%);
+  }
+  
+  

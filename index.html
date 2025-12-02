@@ -63,25 +63,20 @@
         <div class="col-5">
         </div>
 </div>
-<div class="row col-12">
-<div class="col-2"></div>
+<div class="about-me-row row col-12">
 <div class="text_me col-4">
-<h2>Õppimine</h2>
+<h3 class="subtitle">Haridus</h3>
 <p class="text2"><a href="https://www.keilapohikool.ee/info">Keila Ühisgümnaasium</a>:&nbsp;2011 aasta.</p>
 <p class="text2"><a href="https://www.tptlive.ee/">Tallinna Polütehnikum</a>:&nbsp;2015 aasta.</p>
 <p class="text2"><a href="https://www.eek.ee/rakendusk%C3%B5rgharidus%C3%B5pe/eriala/veebitehnoloogiad">Ettevõtluskõrgkool Mainor</a>:&nbsp; 2021 aasta.</p>
 </div>
 <div class="text_me col-4">
-<h2>Töökogemus</h2>
-<hr>
-<ul>
+<h3 class="subtitle">Töökogemus</h3>
 <p class="text2"><a href="https://www.ericsson.com/en/about-us/company-facts/ericsson-worldwide/estonia">Ericsson</a>&nbsp;"IT tehnik (praktika)"&nbsp;2014 - 2015 aasta.</p>
 <p class="text2"><a href="https://www.byroomaailm.ee/">Büroomaailm</a>&nbsp;"Web arendaja (praktika)"&nbsp;2020 - 2020 aasta.</p>
-<p class="text2"><a href="https://www.byroomaailm.ee/">Büroomaailm</a>&nbsp;"Teenindusosakonna juhataja"&nbsp;2017 - (päegu töötan) aasta.</p>
-</ul>
-</hr>
+<p class="text2"><a href="https://www.byroomaailm.ee/">Büroomaailm</a>&nbsp;"Teenindusosakonna juhataja"&nbsp;2017 - 2021 aasta.</p>
+<p class="text2"><a href="https://www.digituul.ee/">Digituul</a>&nbsp;"Arendaja"&nbsp;2022 - 2025 aasta.</p>
 </div>
-<div class="col-2"></div>
 </div>
 
 <div id="works" class="works row col-12">
@@ -336,16 +331,66 @@
 </div>
 
 
-<div class="More row col-12">
-<div class="col-5"></div>
-<button title="Click to show/hide content" class="btn btn-light" type="button" 
+<!--<div class="More row col-12">
+<button title="Click to show/hide content" class="btn btn-light more-btn" type="button" 
 onclick="if(document.getElementById('spoiler') .style.display=='none')
  {document.getElementById('spoiler') .style.display=''}
  else{document.getElementById('spoiler') .style.display='none'}">
- <b>Näita rohkem</b>
+ <b>Kuva rohkem</b>
  </button>
- <div class="col-5"></div>
- </div>
+ </div>-->
+
+<div class="More row col-12 d-flex justify-content-center" id="showButton">
+    <button title="Click to show/hide content" class="btn btn-light more-btn" type="button"
+    onclick="showSpoiler()">
+    <b>Kuva rohkem</b>
+    </button>
+</div>
+
+<div class="More row col-12 d-flex justify-content-center" id="hideButton" style="display: none !important;">
+    <button title="Click to show/hide content" class="btn btn-light more-btn" type="button"
+    onclick="hideSpoiler()">
+    <b>Kuva vähem</b>
+    </button>
+</div>
+
+<div id="spoiler" style="display:none;">
+    </div>
+
+<script>
+    // ----------------------------------------------
+    // ФИНАЛЬНЫЕ ФУНКЦИИ ДЛЯ КНОПОК
+    // ----------------------------------------------
+
+    // Функция, когда нажимают "Kuva rohkem" (Показать больше)
+    function showSpoiler() {
+        // 1. Показываем контент
+        document.getElementById('spoiler').style.display = 'flex'; 
+        
+        // 2. Управляем кнопками:
+        
+        // Скрываем "Kuva rohkem" (SHOW BUTTON)
+        document.getElementById('showButton').setAttribute('style', 'display: none !important;');
+        
+        // Показываем "Kuva vähem" (HIDE BUTTON)
+        // Мы используем 'flex' для правильного центрирования (d-flex)
+        document.getElementById('hideButton').style.display = 'flex'; 
+    }
+
+    // Функция, когда нажимают "Kuva vähem" (Скрыть меньше)
+    function hideSpoiler() {
+        // 1. Скрываем контент
+        document.getElementById('spoiler').style.display = 'none'; 
+        
+        // 2. Управляем кнопками:
+        
+        // Показываем "Kuva rohkem" (SHOW BUTTON)
+        document.getElementById('showButton').style.display = 'flex';
+        
+        // Скрываем "Kuva vähem" (HIDE BUTTON)
+        document.getElementById('hideButton').setAttribute('style', 'display: none !important;');
+    }
+</script>
 
 
 <div id="contact" class="works row col-12">
@@ -360,7 +405,7 @@ onclick="if(document.getElementById('spoiler') .style.display=='none')
 <div class="row col-12">
 <div class="col-4"></div>
 <div class="contact col-4">
-<a href="mailto:1.aleksei.rusin@gmail.com"><h2 class="e-mail">1.aleksei.rusin@gmail.com</h2></a>
+<a href="mailto:1.aleksei.rusin@gmail.com"><p class="e-mail">1.aleksei.rusin@gmail.com</p></a>
 
 <a class="social" href=https://ee.linkedin.com/public-profile/in/aleksei-rusin-b2b46818b?challengeId=AQHc4IKl5NSJ4gAAAXQQToOcx-UBN5rMEwcALEvHPDuc4Ums0y6-49vu2vXrrKYQS7_TzFquWMzUnn9vajM74uYPrbbbBCmlbw&submissionId=b1987601-d23d-2d16-e53f-80a082d4d228" class="btn btn-social-icon btn-linkedin">
     <span class="fa fa-linkedin"></span>
@@ -371,7 +416,7 @@ onclick="if(document.getElementById('spoiler') .style.display=='none')
 </a>
 
 
-<h2 class="copyright">&#169 Aleksei Rusin</h2>
+<p class="copyright">&#169 Kõik õigused kaitstud | Aleksei Rusin</p>
 </div>
 <div class="col-4"></div>
 </div>

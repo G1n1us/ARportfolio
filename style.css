@@ -25,13 +25,12 @@ h5
 }
 h1 
 {
-	 padding-top: 5%;
+	margin: 30px 0px;
+	 padding-top: 20px;
+	 padding-bottom: 20px;
 	 text-align: center;
-	  font-size: 30px;
+	  font-size: 20px;
 	  color: white;
-	  padding-bottom:3%;
-	  text-shadow: 2px 2px 5px green;
-	  font-family: "Roboto-Bold";
 }
 p
 {
@@ -47,7 +46,7 @@ p
 .text2
 {
 	text-align:left;
-	margin-left:26%;
+	padding: 0px 30px;
 }
 .text3
 {
@@ -140,12 +139,12 @@ body
 	padding-right:2%;
 	padding-left:2%;
 	padding-bottom:2%;
-	
-   background: url(pictures/background2.jpg) no-repeat center center fixed; 
+	background-color: black;
+  /*background: url(pictures/background2.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
+  background-size: cover;*/
 }
 
 .rectangle
@@ -158,18 +157,20 @@ body
 .text_me 
 {
 	 width: 90%; /* задаете свои размеры */
-    height: 90%;
-    border-radius: 20%;
-    /* не забываем о кроссбраузерности */
-    -moz-border-radius: 20%;
-    -webkit-border-radius: 20%;
-    -khtml-border-radius: 20%;
+    height: 300px;
 	margin-top:20px;
+	border: solid;
+	border-radius: 5px;
+	border-color: grey;
 	 background-color: #FFFFFF;
 	 -webkit-box-shadow: 9px 9px 19px 6px rgba(215,212,255,0.27);
 -moz-box-shadow: 9px 9px 19px 6px rgba(215,212,255,0.27);
 box-shadow: 9px 9px 19px 6px rgba(215,212,255,0.27);
-margin: 50px 0px;
+margin: 0px 25px;
+}
+.subtitle
+{
+padding: 30px 0px;
 }
 h2
 {
@@ -199,11 +200,6 @@ background-color:rgba(0,0,0,0.8);
 {
 background-color:rgba(0,0,0,0.8);
 }
-.header
-{
-background-color:rgba(0,0,0,0.3);
- border-radius: 20%;
-}
 
 .works
 {
@@ -232,11 +228,14 @@ background-color:rgba(0,0,0,0.3);
 }
 .e-mail
 {
-	font-size: 13px;
+	font-size: 16px;
+	margin-top: 30px;
+	margin-bottom: 30px;
 }
 .copyright
 {
-	font-size: 10px;
+	font-size: 14px;
+	margin-top: 30px;
 }
 .social
 {
@@ -297,9 +296,33 @@ box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 255.2), 0 6px 20px 0 rgba(0, 0, 0, 0
 	margin-top:50px;
 }
 
+#spoiler > div
+{
+	width: 70%;
+	display: flex;
+  justify-content: center;
+}
+
 .More
 {
 	margin-top:50px;
+	width: 100%;
+	display: flex;
+  justify-content: center;
+
+}
+
+.more-btn
+{
+	display: flex;
+  justify-content: center;
+}
+
+#spoiler
+{
+	width: 100%;
+	display: flex;
+  justify-content: center;
 }
 .cv_ru
 {
@@ -347,3 +370,7 @@ box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 255.2), 0 6px 20px 0 rgba(0, 0, 0, 0
 	text-align: left;
 }
   
+.about-me-row{
+  display: flex;
+  justify-content: center;
+}

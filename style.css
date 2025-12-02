@@ -77,6 +77,12 @@ nav
    margin-top:2%;
 }
 
+.language-flag
+{
+	display: inline;
+	padding: 0px 10px;
+}
+
 .en_flag
 {
 	border: 1px solid #555;
@@ -201,6 +207,11 @@ background-color:rgba(0,0,0,0.8);
 background-color:rgba(0,0,0,0.8);
 }
 
+#works
+{
+	margin-bottom:-50px ;
+}
+
 .works
 {
 	margin-top:5%;
@@ -256,6 +267,26 @@ background-color:rgba(0,0,0,0.8);
 .icon:hover{
 box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 255.2), 0 6px 20px 0 rgba(0, 0, 0, 0.50);
 }
+
+.cv-btn
+{
+	margin-top: 50px!important;
+	background-color: transparent;
+	border: solid;
+	border-width: 1px;
+	border-color: white;
+	padding: 10px 20px;
+	color: white;
+	text-align: left;
+	margin-left: 3%!important;
+}
+.cv-btn:hover
+{
+	color: white;
+	color: black;
+}
+
+
 #myBtn {
 
   display: none;

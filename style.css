@@ -130,8 +130,8 @@ nav
   background-color: #4CAF50;
 }
 
-/* Add responsiveness - on screens less than 500px, make the navigation links appear on top of each other, instead of next to each other */
-@media screen and (max-width: 500px) {
+/* Add responsiveness - on screens less than 900px, make the navigation links appear on top of each other, instead of next to each other */
+@media screen and (max-width: 900px) {
   .navbar a {
     float: none;
     display: block;

@@ -163,8 +163,8 @@ body
 .text_me 
 {
 	padding: 20px;
-	width: 90%; /* задаете свои размеры */
-  height: 300px;
+	width: 90%;
+  height: 350px;
 	margin-top:20px;
 	border: solid;
 	border-radius: 5px;

@@ -162,8 +162,9 @@ body
 
 .text_me 
 {
-	 width: 90%; /* задаете свои размеры */
-    height: 300px;
+	padding: 20px;
+	width: 90%; /* задаете свои размеры */
+  height: 300px;
 	margin-top:20px;
 	border: solid;
 	border-radius: 5px;
